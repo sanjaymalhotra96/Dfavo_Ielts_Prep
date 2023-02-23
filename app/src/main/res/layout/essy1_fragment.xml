@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/manrope_regular"
+        android:text="01/26"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/question_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_no"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/manrope_medium"
+        android:text="Societry,Environment and Family"
+        android:textColor="#162534"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_topic"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Q.Read other people's answers before chiming in with yours. Your first impulse is often the same as other people's. Quora will teach you about how people think and how to practice divergent thinking, a critical component to creativity."
+        android:fontFamily="@font/manrope_semi_bold"
+        android:textColor="#45515D"
+        android:textSize="13sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:src="@drawable/ic_test"
+            app:tint="@color/black" />
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_alignStart="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/right"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="2"
+            android:text="write Answer"
+            android:background="@drawable/shape_rectangle_all_radius_btn_gradient"
+            android:fontFamily="@font/manrope_semi_bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:src="@drawable/ic_test"
+            app:tint="@color/black" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

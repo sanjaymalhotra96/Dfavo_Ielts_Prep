@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".rwl.essay.UserInputEssayActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_arrow_left"
+           />
+
+            <TextView
+                android:id="@+id/textdummy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="CueCard"
+                android:textAlignment="center"
+                android:fontFamily="@font/manrope_extra_bold"
+                android:textColor="#162534"
+                android:textSize="18sp"  />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#E8E9EB"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view11"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="2dp"
+                    app:cardBackgroundColor="@color/black"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/relative2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/relative"
+                            android:background="@drawable/gradient_speaking"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="10dp">
+
+
+                            <TextView
+                                android:id="@+id/textview_cue"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:fontFamily="@font/manrope_semi_bold"
+                                android:gravity="center"
+                                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.fjhfjkfjkfjkhfkjhdfjhjkfhjkdfshjksdfhjkfdshjkfhjkfdhjkfhjkdsfhjksfhjkdfshjdfhkjfkjfkjfkfjkjfkjfkjfdkjdfkjdfkdfjkdfjkdfjdfkjdfkjdfkjdfkjdfkjkjdfkjdfkdjfkjdfkdf"
+                                android:textAlignment="center"
+                                android:textColor="#162534"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.core.widget.NestedScrollView>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/manrope_semi_bold"
+                    android:gravity="center"
+                    android:text="Record Your Answer"
+                    android:textColor="#162534"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="50dp"
+                    android:background="#32CFB3" />
+
+
+                <ImageView
+                    android:id="@+id/record_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:padding="25dp"
+                    android:background="@drawable/shape_participants_community"
+                    android:src="@drawable/ic_mic"
+                    android:tint="@color/white"
+                    tools:ignore="UseAppTint" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:textColor="#162534"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/manrope_medium"
+                    android:text="Tap to Start Recording"
+                   />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/zz_back_button"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_left"
+         />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/left"
+            android:layout_alignEnd="@+id/right"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="1/20"
+            android:textColor="#162534"
+            android:textSize="23sp"
+            android:fontFamily="@font/manrope_semi_bold"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/zz_back_button"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_right"
+        />
+    </LinearLayout>
+</RelativeLayout>

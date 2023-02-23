@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--frequently used colors-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="hint">#E7E7E7</color>
+    <color name="blank">#00FFFFFF</color>
+
+    <!--dashboard card background colors-->
+    <color name="db_cardBack1">#E8F0FD</color>
+    <color name="db_cardText1">#215898</color>
+    <color name="db_cardBack2">#E4F7FB</color>
+    <color name="db_cardText2">#215898</color>
+    <color name="db_cardBack3">#FCE8E7</color>
+    <color name="db_cardText3">#215898</color>
+    <color name="db_cardBack4">#E7F4EA</color>
+    <color name="db_cardText4">#215898</color>
+
+    <!--background colors-->
+    <color name="toolbarBackgroundColor">#2A3C4A</color>
+    <color name="errorIconBackgroundColor">#AE3230</color>
+    <color name="infoIconBackgroundColor">#457EAC</color>
+    <color name="successIconBackgroundColor">#5A7151</color>
+    <color name="warningIconBackgroundColor">#927436</color>
+    <color name="chatButtonBackgroundColor">#FFEAC0</color>
+    <color name="remarksButtonBackgroundColor">#FFEAC0</color>
+    <color name="callButtonBackgroundColor">#E9F9F3</color>
+    <color name="intakeButtonBackgroundColor">#FFF2D3</color>
+    <color name="tabIndicatorBackgroundColor">#FFB521</color>
+    <color name="dividerBackgroundColor">#ededed</color>
+    <color name="disabledEditTextBackgroundColor">#60D9D9D9</color>
+    <color name="navigationBarBackgroundColor">#2A3C4A</color>
+    <color name="unreadNotificationBackgroundColor">#f2f7f1</color>
+
+    <!--other colors-->
+    <color name="easy">#03AB4E</color>
+    <color name="moderate">#FFB521</color>
+    <color name="hard">#FF0000</color>
+    <color name="rippleColor">#50FFFFFF</color>
+
+    <color name="disabledTextColor">#666666</color>
+    <color name="hyperlinkTextColor">#0000FF</color>
+    <color name="viewAllTextColor">#666666</color>
+    <color name="radioButtonUnSelectedColor">#D9D9D9</color>
+    <color name="tintColorToolbar">#151522</color>
+    <color name="btnColorGreen">#25CF94</color>
+    <color name="mainColor">#344955</color>
+    <color name="failTextColor">#DC3545</color>
+    <color name="successTextColor">#151522</color>
+    <color name="snackErrorBack">#C71A18</color>
+    <color name="snackWarningBack">#EBA000</color>
+    <color name="snackFilterTextColor">#6C6C6C</color>
+</resources>

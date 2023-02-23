@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dfavo.ielts">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base"
+        tools:node="merge"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".activities.VideoCoursesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.vocabulary.VocabularyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.activities.EditAnswerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.activities.AnswerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.rwl.graphs.UserInputGraphsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.rwl.essay.UserInputEssayActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.rwl.graphs.GraphsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.rwl.essay.EssayActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dfavo.ielts.speaking.SpeakingActivity"
+            android:exported="true"
+            android:theme="@style/ReadingActivity"
+            />
+
+        <activity
+            android:name="com.dfavo.ielts.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".rwl.RWLActivity"
+            android:exported="true"
+            android:theme="@style/ReadingActivity" />
+
+        <activity
+            android:name="com.dfavo.ielts.activities.EnterPasscodeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.complete_profile.CpActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.activities.OtpActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.activities.LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.on_boarding.ObActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dfavo.ielts.speaking.SpeakingSelectedPartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dfavo.ielts.speaking.SpeakingSelectedPartQueAnsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dfavo.ielts.speaking.VoiceRecordingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dfavo.ielts.activities.VedioViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dfavo.ielts.activities.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dfavo.ielts.activities.ListeningActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.dfavo.ielts.activities.Instructions"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
